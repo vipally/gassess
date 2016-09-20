@@ -105,6 +105,7 @@ func main() {
 			fmt.Println("read end", r_cnt, "/", num_read, end_r, end_r.Sub(start), end_r.Sub(last))
 		}
 
+		fmt.Printf("%#v\n", b.Stats())
 		//tx.Commit()
 		return nil
 	})
