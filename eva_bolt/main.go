@@ -32,7 +32,7 @@ func main() {
 	if report <= 0 {
 		report = default_report
 	}
-	db, _ := bolt.Open("./db/bolt.db", 0777, nil)
+	db, _ := bolt.Open("./bolt.db", 0777, nil)
 	defer db.Close()
 
 	db.Batch(func(tx *bolt.Tx) error {
